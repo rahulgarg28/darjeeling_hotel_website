@@ -1,0 +1,64 @@
+@import 'colors';
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    
+    .container{
+        width: 100%;
+        height: 100%;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1124px;
+
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+.productCart{
+    background-color: $element;
+    display: flex;
+    margin: 10rem;
+    border-radius: 5px;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    transform: all 0,5s;
+    width: 250px;
+
+    img {
+        width: 100%;
+        height: 35vh;   
+        object-fit: cover;
+    }
+    p{
+        color: #000;
+        font-weight: 700;
+    }
+    h4{
+        margin: 1rem;
+        color: black;
+    }
+    button{
+        cursor: pointer;
+        background-color: rgb(255 250 0);
+        border: none;
+        padding: 1rem;
+        color: black;
+        border-radius: 5px;
+        font-weight: 500;
+        width: 100%;
+        transition: all 0.5s;
+        &:hover{
+            background-color: rgb(148, 146, 48);
+        }
+    }
+    &:hover{
+        transform: scale(1.05);
+    }
+}
